@@ -8,10 +8,72 @@ html {
     scroll-behavior: smooth;
 }
 
+main {
+    padding-top: 60px;
+}
+
+/* section */
+section {
+    width: 100vw;
+    height: auto;
+}
+
 /* container */
 .container {
     width: 80%;
     padding: 2rem;
     margin: 0 auto;
 }
-  
+
+/* header */
+header {
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    color: #fff;
+    background-color: #1e88e5;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-bottom: 0.5px solid transparent;
+    padding: 2px 0;
+    transition: border 0.5s ease;
+}
+
+.nav-link:hover {
+    border-bottom: 0.5px solid #ffffff;
+}
+
+.nav-link-form {
+    color: #1e88e5;
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: #fff;
+    border: 0.5px solid #fff;
+    border-radius: 5px;
+    padding: 7px;
+}

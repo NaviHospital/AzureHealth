@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Form</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/appointment.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="../../index.html" class="logo">NaviNic</a>
+
+            <nav>
+                <a href="./about.html" class="nav-link">About Us</a>
+                <a href="./doctor.html" class="nav-link">Doctor's Schedule</a>
+            </nav>
+
+            <a href="./appointment.html" class="nav-link-form">Make Appointment</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="appointment">
+            <div class="container">
+                <div class="form-card">
+                    <div class="form-head">
+                        <h2>Appointment Form</h2>
+                    </div>
+
+                    <div class="form-body">
+                        <form>
+                            <label for="name">Full Name</label>
+                            <input type="text" name="name" placeholder="Fill Your Name">
+
+                            <label for="name">Email</label>
+                            <input type="email" name="name">
+
+                            <label for="phone">Phone Number</label>
+                            <input type="number" name="name">
+
+                            <label for="date">Preferred Date</label>
+                            <input type="date" name="name">
+
+                            <label for="time">Preferred Time</label>
+                            <select name="time">
+                                <option value="none">Select A time</option>
+                                <option value="9am">09:00 AM</option>
+                                <option value="10am">10:00 AM</option>
+                                <option value="11am">11:00 AM</option>
+                                <option value="12am">12:00 AM</option>
+                            </select>
+
+                            <label for="doctor">Select Doctor</label>
+                            <select name="time">
+                                <option value="none">Select A Doctor</option>
+                                <option value="1">Baizhu</option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="4"></option>
+                                <option value="5"></option>
+                            </select>
+
+                            <label for="complaint">Chief Complaint</label>
+                            <textarea name="complaint"
+                                placeholder="Describe your symptoms or reason for visit"></textarea>
+
+                            <button>Book Appointment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
