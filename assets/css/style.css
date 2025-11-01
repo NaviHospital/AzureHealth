@@ -20,7 +20,7 @@ section {
 
 /* container */
 .container {
-    width: 80%;
+    width: 1200px;
     padding: 2rem;
     margin: 0 auto;
 }
@@ -38,7 +38,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 1200px;
     height: 100%;
     margin: 0 auto;
 }
