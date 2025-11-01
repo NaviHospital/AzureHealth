@@ -11,7 +11,7 @@
 
 .search-container {
   display: flex;
-  width: 35%;
+  width: 30%;
   border: 0.5px solid #1e88e5;
   border-radius: 10px;
   gap: 10px;
@@ -38,7 +38,7 @@ form option {
 }
 
 form button {
-  width: 15%;
+  width: 20%;
   font-size: 1rem;
   padding: 0.5rem 2rem;
 }
