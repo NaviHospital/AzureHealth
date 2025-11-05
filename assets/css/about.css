@@ -57,14 +57,18 @@ header {
     text-align: center;
     margin-bottom: 20px;
     padding-top: 1.5%;
+    font-size: 3rem;
 }
 
 #About p {
     margin-top: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
 }
 
 
 #About .VM{
+    margin-top: 100px;
     text-align: left;
     justify-content: center;
     align-items: center;
@@ -79,12 +83,16 @@ header {
     max-height: 20rem;
     flex-grow: 1;
     flex-basis: 200;
-    /* background-color: red; */
+    box-shadow: 0 0 25px var(--primary-color);
+    border: 2.5px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 15px;
 }
 
 
 #About .VM h2 {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #About .VM p {
@@ -98,7 +106,8 @@ header {
     color: var(--primary-color);
     text-align: center;
     margin-top: 100px;
-    margin-bottom: 20px;   
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
 
@@ -117,13 +126,16 @@ header {
     max-height: 35rem;
     flex-grow: 1;
     flex-basis: 200;
-    /* background-color: red; */
-    border-color: 10px solid red;
+    box-shadow: 0 0 25px var(--primary-color);
+    border: 2.5px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 15px;
 }
 
 
 #Why-Us h2 {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 1px;
 }
 
@@ -135,6 +147,7 @@ header {
 
 #Value h1{
     color: var(--primary-color);
+    font-size: 2.5rem;
     text-align: center;
     margin-top: 100px;   
 }
@@ -146,7 +159,7 @@ header {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 10%;
+    gap: 50px;
 }
 
 #Value .row {
@@ -155,17 +168,59 @@ header {
     max-height: 20rem;
     flex-grow: 1;
     flex-basis: 200;
-    /* background-color: red; */
+    box-shadow: 0 0 25px var(--primary-color);
+    border: 2.5px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 15px;
 }
 
 
 #Value h2 {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #Value p {
     margin-top: 15px;
 }
+
+/* Main-Facilities */
+
+#Facilities h1{
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#Facilities .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    margin-top: 25px;
+    justify-content: center;
+
+}
+
+#Facilities .card{
+    border: 2.5px solid var(--primary-color);
+    box-shadow: 0 0 25px var(--primary-color);
+    flex-grow: 1;
+    flex-basis: 200;
+    max-width: 35rem;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+#Facilities .card h2{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+}
+
+#Facilities .card p{
+    text-align: center;
+}
+
 
 /* Main-Story */
 
@@ -177,10 +232,17 @@ header {
     text-align: center;
     justify-items: center;
     color: var(--primary-color);
+    font-size: 2.5rem;
 }
 
 #Story p {
     justify-content: center;
+}
+
+#Story h2 {
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
 }
 
 #Story .Timeline {
@@ -199,6 +261,10 @@ header {
     margin-top: 1%;
     flex-grow: 1;
     flex-basis: 200;
+    box-shadow: 0 0 25px var(--primary-color);
+    border: 2.5px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 10px;
 }
 
 
@@ -210,6 +276,7 @@ header {
 
 #Management h1 {
     text-align: center;
+    font-size: 2.5rem;
     color: var(--primary-color);
     /* border-bottom: 5px solid var(--primary-color); */
 }
@@ -217,6 +284,7 @@ header {
 #Management p {
     margin-top: 15px;
 }
+
 
 /* End Main */
 
