@@ -21,8 +21,10 @@ section {
 /* container */
 .container {
     width: 80%;
+    height: auto;
     padding: 2rem;
     margin: 0 auto;
+    z-index: 2;
 }
 
 /* header */
@@ -32,6 +34,8 @@ header {
     height: 60px;
     color: #fff;
     background-color: #1e88e5;
+    border-bottom: 0.5px solid #fff;
+    z-index: 999;
 }
 
 .navbar {
@@ -76,4 +80,10 @@ nav {
     border: 0.5px solid #fff;
     border-radius: 5px;
     padding: 7px;
+}
+
+/* footer */
+footer {
+    width: 100vw;
+    height: 200px;
 }
