@@ -331,3 +331,70 @@ header {
     color: #fff;
     text-decoration: none;
 }
+/* <footer>
+        <div class="">
+            <nav>
+                <a class="" href="#">Privacy Policy</a>
+                <a class="" href="#">therms of Use</a>
+                <a class="" href="#">Legal</a>
+            </nav>
+
+            <p>&copy; 2025 All Rights Reserved</p>
+        </div>
+    </footer> */
+/* footer */
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+}
+
+footer .logo h1 a{
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 550;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+footer .row ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .row ul p {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+footer .row ul li {
+    margin: 5px 0;
+    text-align: left;
+}
+
+footer .row ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+footer .row ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .row .smol-text {
+    width: 250px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: left;
+}
