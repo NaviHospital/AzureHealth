@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Find a Doctor | NaviNic</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/doctor.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
@@ -15,12 +15,12 @@
         <div class="navbar">
             <a href="../../index.html" class="logo">NaviNic</a>
 
-            <nav>
+            <nav class="nav-links">
                 <a href="./about.html" class="nav-link">About Us</a>
-                <a href="./doctor.html" class="nav-link">Doctor's Schedule</a>
+                <a href="./doctor.html" class="nav-link active">Doctor's Schedule</a>
             </nav>
 
-            <a href="./appointment.html" class="nav-link-form">Make Appointment</a>
+            <a href="./appointment.html" class="btn btn-primary">Make Appointment</a>
         </div>
     </header>
 
@@ -29,22 +29,38 @@
             <div class="container">
                 <div class="search-form">
                     <form>
-                        <div class="search-container">
+                        <div class="input-group">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="text" placeholder="Search for doctor">
+                            <input type="text" placeholder="Search for doctor (e.g., Dr. Andi)" aria-label="Search doctor">
                         </div>
 
-                        <select name="department">
-                            <option value="none">Select Department</option>
-                            <option value=""></option>
-                        </select>
+                        <div class="input-group select-group">
+                            <label for="department">Department</label>
+                            <select name="department" id="department">
+                                <option value="">Select Department</option>
+                                <option value="cardiology">Cardiology</option>
+                                <option value="oncology">Oncology</option>
+                                <option value="neurology">Neurology</option>
+                                <option value="pediatrics">Pediatrics</option>
+                                <option value="orthopedics">Orthopedics</option>
+                            </select>
+                        </div>
 
-                        <select name="specialization">
-                            <option value="none">Select Specialization</option>
-                            <option value=""></option>
-                        </select>
+                        <div class="input-group select-group">
+                            <label for="specialization">Specialization</label>
+                            <select name="specialization" id="specialization">
+                                <option value="">Select Specialization</option>
+                                <option value="oncologist">Oncologist</option>
+                                <option value="cardiologist">Cardiologist</option>
+                                <option value="neurosurgeon">Neurosurgeon</option>
+                                <option value="pediatrician">Pediatrician</option>
+                                <option value="orthopedist">Orthopedist</option>
+                            </select>
+                        </div>
 
-                        <button>Find a Doctor</button>
+                        <button type="submit" class="btn btn-search">
+                            <i class="fa-solid fa-search"></i> Find a Doctor
+                        </button>
                     </form>
                 </div>
             </div>
@@ -52,40 +68,53 @@
 
         <section id="doctor-list">
             <div class="container">
-                <div class="doctor-row">
+                <h2 class="section-title">Our Expert Doctors</h2>
+                <div class="doctor-grid">
                     <div class="card">
-                        <img class="card-img" src="" alt="">
-
-                        <div class="card-description">
-                            <h2>budi</h2>
-                            <p>MBBS, MD - Oncologists</p>
+                        <div class="card-img-wrapper">
+                            <img class="card-img" src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=300&h=300&q=80" alt="Dr. Budi">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="doctor-name">Dr. Budi Santoso</h3>
+                            <p class="doctor-title"><i class="fa-solid fa-stethoscope"></i> MBBS, MD – Oncologist</p>
+                            <p class="doctor-desc">Specializes in cancer treatment and personalized care.</p>
+                            <a href="#" class="btn btn-outline">View Profile</a>
                         </div>
                     </div>
 
                     <div class="card">
-                        <img class="card-img" src="" alt="">
-
-                        <div class="card-description">
-                            <h2>budi</h2>
-                            <p>MBBS, MD - Oncologists</p>
+                        <div class="card-img-wrapper">
+                            <img class="card-img" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=300&h=300&q=80" alt="Dr. Siti">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="doctor-name">Dr. Siti Rahayu</h3>
+                            <p class="doctor-title"><i class="fa-solid fa-heart-pulse"></i> MD – Cardiologist</p>
+                            <p class="doctor-desc">Expert in heart disease prevention and intervention.</p>
+                            <a href="#" class="btn btn-outline">View Profile</a>
                         </div>
                     </div>
 
                     <div class="card">
-                        <img class="card-img" src="" alt="">
-
-                        <div class="card-description">
-                            <h2>budi</h2>
-                            <p>MBBS, MD - Oncologists</p>
+                        <div class="card-img-wrapper">
+                            <img class="card-img" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=300&h=300&q=80" alt="Dr. Rudi">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="doctor-name">Dr. Rudi Hermawan</h3>
+                            <p class="doctor-title"><i class="fa-solid fa-brain"></i> MD, PhD – Neurologist</p>
+                            <p class="doctor-desc">Focus on stroke, epilepsy, and neurodegenerative disorders.</p>
+                            <a href="#" class="btn btn-outline">View Profile</a>
                         </div>
                     </div>
 
                     <div class="card">
-                        <img class="card-img" src="" alt="">
-
-                        <div class="card-description">
-                            <h2>budi</h2>
-                            <p>MBBS, MD - Oncologists</p>
+                        <div class="card-img-wrapper">
+                            <img class="card-img" src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=300&h=300&q=80" alt="Dr. Maya">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="doctor-name">Dr. Maya Indriani</h3>
+                            <p class="doctor-title"><i class="fa-solid fa-baby"></i> MD – Pediatrician</p>
+                            <p class="doctor-desc">Caring for children from infancy through adolescence.</p>
+                            <a href="#" class="btn btn-outline">View Profile</a>
                         </div>
                     </div>
                 </div>
