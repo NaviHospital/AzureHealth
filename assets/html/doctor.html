@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Find a Doctor – NaviNic</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/doctor.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
@@ -16,35 +16,38 @@
             <a href="../../index.html" class="logo">NaviNic</a>
 
             <nav>
-                <a href="./about.html" class="nav-link">About Us</a>
-                <a href="./doctor.html" class="nav-link">Doctor's Schedule</a>
+                <a href="../html/about.html" class="nav-link">About Us</a>
+                <a href="../html/doctor.html" class="nav-link">Doctor's Schedule</a>
+                <a href="../html/appointment.html" class="nav-link-form">Book Appointment</a>
             </nav>
-
-            <a href="./appointment.html" class="nav-link-form">Book Appointment</a>
         </div>
     </header>
 
     <main>
         <section id="search">
             <div class="container">
-                <div class="search-form">
+                <div class="search-form" role="search">
                     <form>
                         <div class="search-container">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="text" placeholder="Search for doctor">
+                            <input type="text" placeholder="Search for doctor" aria-label="Search doctor by name">
                         </div>
 
-                        <select name="department">
-                            <option value="none">Select Department</option>
-                            <option value=""></option>
+                        <select name="department" aria-label="Select department">
+                            <option value="none" disabled selected>Select Department</option>
+                            <option value="oncology">Oncology</option>
+                            <option value="cardiology">Cardiology</option>
+                            <option value="neurology">Neurology</option>
                         </select>
 
-                        <select name="specialization">
-                            <option value="none">Select Specialization</option>
-                            <option value=""></option>
+                        <select name="specialization" aria-label="Select specialization">
+                            <option value="none" disabled selected>Select Specialization</option>
+                            <option value="medical-oncology">Medical Oncology</option>
+                            <option value="surgical-oncology">Surgical Oncology</option>
+                            <option value="radiation-oncology">Radiation Oncology</option>
                         </select>
 
-                        <button>Find a Doctor</button>
+                        <button type="submit">Find a Doctor</button>
                     </form>
                 </div>
             </div>
@@ -54,43 +57,118 @@
             <div class="container">
                 <div class="doctor-row">
                     <div class="card">
-                        <img class="card-img" src="" alt="">
-
+                        <img class="card-img" src="../img/team-2.jpg" alt="">
                         <div class="card-description">
-                            <h2>budi</h2>
-                            <p>MBBS, MD - Oncologists</p>
+                            <h2>Dr. Baizhu</h2>
+                            <p>MBBS, MD – Oncologist</p>
                         </div>
                     </div>
 
                     <div class="card">
-                        <img class="card-img" src="" alt="">
-
+                        <img class="card-img" src="../img/team-2.jpg" alt="">
                         <div class="card-description">
-                            <h2>budi</h2>
-                            <p>MBBS, MD - Oncologists</p>
+                            <h2>Dr. Radiga Yasser</h2>
+                            <p>MBBS, MD – Cardiologist</p>
                         </div>
                     </div>
 
                     <div class="card">
-                        <img class="card-img" src="" alt="">
-
+                        <img class="card-img" src="../img/team-2.jpg" alt="">
                         <div class="card-description">
-                            <h2>budi</h2>
-                            <p>MBBS, MD - Oncologists</p>
+                            <h2>Dr. Prajakusuma</h2>
+                            <p>MBBS, MD – Neurologist</p>
                         </div>
                     </div>
 
                     <div class="card">
-                        <img class="card-img" src="" alt="">
-
+                        <img class="card-img" src="../img/team-2.jpg" alt="">
                         <div class="card-description">
-                            <h2>budi</h2>
-                            <p>MBBS, MD - Oncologists</p>
+                            <h2>Dr. Gatak</h2>
+                            <p>MBBS, MD – surgicalist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="doctor-row">
+                    <div class="card">
+                        <img class="card-img" src="../img/team-2.jpg" alt="">
+                        <div class="card-description">
+                            <h2>Dr. Baizhu</h2>
+                            <p>MBBS, MD – Oncologist</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img" src="../img/team-2.jpg" alt="">
+                        <div class="card-description">
+                            <h2>Dr. Radiga Yasser</h2>
+                            <p>MBBS, MD – Cardiologist</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img" src="../img/team-2.jpg" alt="">
+                        <div class="card-description">
+                            <h2>Dr. Prajakusuma</h2>
+                            <p>MBBS, MD – Neurologist</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img" src="../img/team-2.jpg" alt="">
+                        <div class="card-description">
+                            <h2>Dr. Gatak</h2>
+                            <p>MBBS, MD – surgicalist</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+     <footer>
+        <section id="footer-top">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <h1><a href="../../index.html">NaviNic</a></h1>
+    
+                    <div class="sub-text">
+                        <p>NaviNic is an international standard hospital network with modern and professional healthcare
+                            services.</p>
+                    </div>
+                </div>
+    
+                <ul class="footer-info">
+                    <p class="info-title">About Us</p>
+                    <li><a href="#About">About us</a></li>
+                    <li><a href="#Why-Us">Why Us</a></li>
+                    <li><a href="#Value">Value</a></li>
+                    <li><a href="#Facilities">Facilities</a></li>
+                    <li><a href="#Story">Story</a></li>
+                    <li><a href="#Management">Management</a></li>
+                </ul>
+    
+                <ul class="footer-info">
+                    <p class="info-title">Contact</p>
+                    <li><p><b>Gmail:</b> <a href="#">Navinic@Gmail.com</a></p></li>
+                    <li><p><b>Phone:</b> <a href="#">08123456789</a></p></li>
+                    <li><p><b>Address:</b> <a href="#">Isekai Wolrd</a></p></li>
+                </ul>
+                
+                <ul class="footer-info">
+                    <p class="info-title">Follow Us</p>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+        </section>
+        
+
+        <section id="footer-bottom">
+            <p>&copy; 2025 All Rights Reserved</p>
+        </section>
+    </footer>
 </body>
 </html>
