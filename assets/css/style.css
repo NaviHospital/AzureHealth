@@ -1,136 +1,160 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 main {
-    padding-top: 60px;
+  padding-top: 60px;
 }
 
 /* section */
 section {
-    width: 100vw;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 /* container */
 .container {
-    width: 80%;
-    padding: 2rem;
-    margin: 0 auto;
+  position: relative;
+  width: 1200px;
+  height: auto;
+  padding: 2rem;
+  margin: 0 auto;
+  z-index: 2;
 }
 
 /* header */
 header {
-    position: fixed;
-    width: 100vw;
-    height: 60px;
-    color: #fff;
-    background-color: #1e88e5;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  color: #000;
+  background-color: #fff;
+  border-bottom: 0.5px solid #000;
+  z-index: 999;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .logo {
-    color: #fff;
-    font-size: 2rem;
-    text-decoration: none;
+  color: #1e88e5;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-decoration: none;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .nav-link {
-    color: #fff;
-    font-size: 1.3rem;
-    text-decoration: none;
-    border-bottom: 0.5px solid transparent;
-    padding: 2px 0;
-    transition: border 0.5s ease;
+  color: #000;
+  font-size: 1.3rem;
+  text-decoration: none;
+  border-bottom: 0.5px solid transparent;
+  padding: 2px 0;
+  transition: border 0.5s ease;
 }
 
 .nav-link:hover {
-    border-bottom: 0.5px solid #ffffff;
+  border-bottom: 0.5px solid #fff;
 }
 
 .nav-link-form {
-    color: #1e88e5;
-    font-size: 1.2rem;
-    text-decoration: none;
-    background-color: #fff;
-    border: 0.5px solid #fff;
-    border-radius: 5px;
-    padding: 7px;
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  background-color: #1e88e5;
+  border: 0.5px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
 }
 
-/* footer */
+/* Footer */
 footer {
-    margin-top: 50px;
-    padding: 20px 0;
-    background-color: var(--primary-color);
-    color: #fff;
-    text-align: center;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  margin-top: 50px;
+  margin: 0 auto;
 }
 
-footer .logo h1 a{
-    color: #fff;
-    font-size: 5rem;
-    font-weight: 550;
-    margin-top: 10px;
-    text-decoration: none;
+#footer-top {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-top: 0.5px solid #000;
+  padding: 20px 0;
 }
 
-footer .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 50px;
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1200px;
+  gap: 50px;
 }
 
-footer .row ul {
-    list-style-type: none;
-    padding: 0;
+.footer-logo h1 a {
+  color: #1e88e5;
+  font-size: 5rem;
+  font-weight: 550;
+  margin-top: 10px;
+  text-decoration: none;
 }
 
-footer .row ul p {
-    font-size: 1.7rem;
-    margin-bottom: 10px;
-    font-weight: bold;
+.footer-container .sub-text {
+  width: 250px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  text-align: left;
 }
 
-footer .row ul li {
-    margin: 5px 0;
-    text-align: left;
+.footer-info {
+  list-style-type: none;
+  text-align: left;
 }
 
-footer .row ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
+.info-title {
+  color: #1e88e5;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
-footer .row ul li a:hover {
-    text-decoration: underline;
+.footer-info li a,
+.footer-info li p {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: transform 0.5s ease;
 }
 
-footer .row .smol-text {
-    width: 250px;
-    margin-top: 20px;
-    font-size: 1.2rem;
-    text-align: left;
+.footer-info a:hover {
+  transform: translateX(5px);
+}
+
+#footer-bottom {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 1rem;
+  border-top: 0.5px solid #000;
 }

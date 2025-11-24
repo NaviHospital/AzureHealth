@@ -1,80 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appointment Form</title>
+    <title>Appointment Form | AzureHealth</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/appointment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
 <body>
     <header>
         <div class="navbar">
-            <a href="../../index.html" class="logo">NaviNic</a>
+            <a href="../../index.html" class="logo">AzureHealth</a>
 
             <nav>
-                <a href="./about.html" class="nav-link">About Us</a>
-                <a href="./doctor.html" class="nav-link">Doctor's Schedule</a>
+                <a href="../html/about.html" class="nav-link">About Us</a>
+                <a href="../html/doctor.html" class="nav-link">Doctor's Schedule</a>
+                <a href="../html/appointment.html" class="nav-link-form">Book Appointment</a>
             </nav>
-
-            <a href="./appointment.html" class="nav-link-form">Make Appointment</a>
         </div>
     </header>
 
     <main>
-        <section id="appointment">
-            <div class="container">
-                <div class="form-card">
-                    <div class="form-head">
-                        <h2>Appointment Form</h2>
-                    </div>
+        <div class="container">
+            <div class="form-card">
+                <div class="form-head">
+                    <h2><i class="fas fa-stethoscope"></i> Book Your Appointment</h2>
+                </div>
 
-                    <div class="form-body">
-                        <form>
-                            <label for="name">Full Name</label>
-                            <input type="text" name="name" placeholder="Fill Your Name">
+                <div class="form-body">
+                    <form id="appointmentForm">
+                        <div>
+                            <label for="name"><i class="fas fa-user"></i> Nama Lengkap</label>
+                            <input type="text" id="name" name="name" placeholder="e.g., Jefri" required>
+                        </div>
 
-                            <label for="name">Email</label>
-                            <input type="email" name="name">
+                        <div>
+                            <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
 
-                            <label for="phone">Phone Number</label>
-                            <input type="number" name="name">
+                        <div>
+                            <label for="phone"><i class="fas fa-phone"></i> Telepon / Whatsapp</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+62 812-3456-7890" required>
+                        </div>
 
-                            <label for="date">Preferred Date</label>
-                            <input type="date" name="name">
+                        <div>
+                            <label for="date"><i class="far fa-calendar-alt"></i> Tanggal Pertemuan</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
 
-                            <label for="time">Preferred Time</label>
-                            <select name="time">
-                                <option value="none">Select A time</option>
-                                <option value="9am">09:00 AM</option>
-                                <option value="10am">10:00 AM</option>
-                                <option value="11am">11:00 AM</option>
-                                <option value="12am">12:00 AM</option>
+                        <!-- <div>
+                            <label for="time"><i class="far fa-clock"></i> Waktu Pertemuan</label>
+                            <select id="time" name="time" required>
+                                <option value=""> Pilih Waktu</option>
+                                <option value="09:00">09:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="13:00">01:00 PM</option>
+                                <option value="14:00">02:00 PM</option>
+                                <option value="15:00">03:00 PM</option>
+                                <option value="16:00">04:00 PM</option>
                             </select>
+                        </div> -->
 
-                            <label for="doctor">Select Doctor</label>
-                            <select name="time">
-                                <option value="none">Select A Doctor</option>
-                                <option value="1">Baizhu</option>
-                                <option value="2"></option>
-                                <option value="3"></option>
-                                <option value="4"></option>
-                                <option value="5"></option>
+                        <div>
+                            <label for="doctor"><i class="fas fa-user-md"></i> Dokter</label>
+                            <select id="doctor" name="doctor" required>
+                                <option value="">Pilih Dokter</option>
+                                <option value="baizhu">Ghazlan Mahardika — Spesialis Jiwa</option>
+                                <option value="siti">Aqil Hardian — Spesialis Gigi</option>
+                                <option value="budi">Yasser — Spesialis Kulit</option>
+                                <option value="maya">Sahel Nichol — Poli Anak</option>
                             </select>
+                        </div>
 
-                            <label for="complaint">Chief Complaint</label>
-                            <textarea name="complaint"
-                                placeholder="Describe your symptoms or reason for visit"></textarea>
+                        <!-- <div>
+                            <label for="complaint"><i class="fas fa-notes-medical"></i> Keluhan</label>
+                            <textarea id="complaint" name="complaint" placeholder="Jelaskan secara singkat gejala atau alasan kunjungan Anda (misalnya, 'batuk terus-menerus selama 1 minggu')"></textarea>
+                        </div> -->
 
-                            <button>Book Appointment</button>
-                        </form>
-                    </div>
+                        <button type="submit">
+                            <i class="fas fa-calendar-check"></i> Konfirmasi
+                        </button>
+                    </form>
+                    
                 </div>
             </div>
-        </section>
+        </div>
     </main>
-</body>
 
+     <footer>
+        <section id="footer-top">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <h1><a href="../../index.html">AzureHealth</a></h1>
+    
+                    <div class="sub-text">
+                        <p>AzureHealth is an international standard hospital network with modern and professional healthcare
+                            services.</p>
+                    </div>
+                </div>
+    
+                <ul class="footer-info">
+                    <p class="info-title">About Us</p>
+                    <li><a href="#About">About us</a></li>
+                    <li><a href="#Why-Us">Why Us</a></li>
+                    <li><a href="#Value">Value</a></li>
+                    <li><a href="#Facilities">Facilities</a></li>
+                    <li><a href="#Story">Story</a></li>
+                    <li><a href="#Management">Management</a></li>
+                </ul>
+    
+                <ul class="footer-info">
+                    <p class="info-title">Contact</p>
+                    <li><p><b>Gmail:</b> <a href="#">AzureHealth@Gmail.com</a></p></li>
+                    <li><p><b>Phone:</b> <a href="#">08123456789</a></p></li>
+                    <li><p><b>Address:</b> <a href="#">Isekai Wolrd</a></p></li>
+                </ul>
+                
+                <ul class="footer-info">
+                    <p class="info-title">Follow Us</p>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+        </section>
+        
+
+        <section id="footer-bottom">
+            <p>&copy; 2025 All Rights Reserved</p>
+        </section>
+    </footer>
+
+    <script>
+        // Simple form validation feedback (optional enhancement)
+        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+            const name = document.getElementById('name').value.trim();
+            const complaint = document.getElementById('complaint').value.trim();
+            
+            if (name && complaint.length < 10) {
+                e.preventDefault();
+                alert('⚠️ Please describe your complaint in at least 10 characters for better preparation.');
+                document.getElementById('complaint').focus();
+            }
+        });
+
+        // Auto-set min date to today
+        document.getElementById('date').min = new Date().toISOString().split('T')[0];
+    </script>
+</body>
 </html>
