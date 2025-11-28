@@ -162,19 +162,6 @@
 }
 
 /* Main-Value */
-
-#Value .container {
-  color: #fff;
-  margin-top: 50px;
-}
-
-#Value h1 {
-  color: var(--primary-color);
-  font-size: 2.5rem;
-  text-align: center;
-  margin-top: 10rem;
-}
-
 #Value .container {
   text-align: left;
   justify-content: center;
@@ -184,27 +171,46 @@
   gap: 35px;
 }
 
-#Value .row {
-  /* margin-top: 10px; */
-  max-width: 25rem;
-  height: 10rem;
-  flex-grow: 1;
-  flex-basis: 200;
-  box-shadow: 0 0 25px var(--primary-color);
+.section-header {
+  width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#Value h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+#value p {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#Value .card {
+  /* width: 300px; */
+  height: 175px;
+  flex-grow: 1px;
+  flex-basis: 350px;
+  box-shadow: 5px 5px 10px #000;
   border: 2.5px solid var(--primary-color);
-  background-color: var(--primary-color);
+  background-color: #fff;
   border-radius: 15px;
   padding: 15px;
 }
 
 #Value h2 {
+  color: #1e88e5;
   text-align: center;
   font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
 }
 
 #Value p {
+  font-size: 1.2rem;
   margin-top: 15px;
-  text-align: center;
 }
 
 /* Main-Facilities */
@@ -216,7 +222,7 @@
   margin-top: 7rem;
 }
 
-#Facilities .row {
+#Facilities .card {
   display: flex;
   flex-wrap: wrap;
   gap: 45px;
@@ -229,7 +235,7 @@
   box-shadow: 0 0 25px var(--primary-color);
   background-color: var(--primary-color);
   color: #fff;
-  flex-grow: 1;
+  flex-gcard: 1;
   flex-basis: 200;
   max-width: 35rem;
   border-radius: 15px;
@@ -247,9 +253,8 @@
 }
 
 /* Main-Story */
-
 #Story {
-  margin-top: 10%;
+  padding: 20px 0;
 }
 
 #Story h1 {
@@ -259,39 +264,82 @@
   font-size: 2.5rem;
 }
 
-#Story p {
-  justify-content: center;
-  margin-bottom: 3rem;
+#Story .container {
+  display: flex;
+  width: 1200px;
+  height: 600px;
+  margin-top: 20px;
 }
 
-#Story h2 {
+#Story .container .text-area {
+  width: 35%;
+  font-size: 3rem;
+}
+
+#Story .Timeline .card h2 {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
 }
 
-#Story .Timeline {
-  margin-top: 4rem;
-  justify-content: space-evenly;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10%;
-  text-align: center;
+#Story .Timeline .card p {
+  justify-content: center;
+  margin-bottom: 3rem;
 }
 
-#Story .row {
-  max-width: 20rem;
-  height: 5rem auto;
+#Story .Timeline {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 65%;
+  /* gap: 25px; */
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+#Story .Timeline .row {
+  display: flex;
+  gap: 25px;
+}
+
+#Story .Timeline .border {
+  width: 1px;
+  height: 100%;
+  border: 1px solid #000;
+}
+
+#Story .Timeline .card-inv {
+  width: 300px;
+  height: 150px;
   margin-top: 1%;
   flex-grow: 1;
-  flex-basis: 200;
-  box-shadow: 0 0 25px var(--primary-color);
-  border: 2.5px solid var(--primary-color);
-  background-color: var(--primary-color);
-  color: #ffff;
+  flex-basis: 150px;
+  background-color: transparent;
+  color: transparent;
   border-radius: 15px;
-  padding: 10px;
+  padding: 1rem;
+}
+
+#Story .Timeline .card {
+  width: 300px;
+  height: 150px;
+  margin-top: 1%;
+  flex-grow: 1;
+  flex-basis: 150px;
+  box-shadow: 10px 10px 10px 5px gray;
+  border: 0.5px solid var(--primary-color);
+  /* background-color: var(--primary-color); */
+  color: #000;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+#Story .Timeline .card h2{
+  color: #1e88e5;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
 }
 
 /* Main-Management */
@@ -310,32 +358,22 @@
   margin-top: 15px;
 }
 
-/* End Main */
-
 /* Small Contact */
 
 #flying-button {
-  display: none;
-  position: fixed;
-  display: flex;
-  align-items: end;
-  justify-content: right;
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-  z-index: 999;
 }
 
 .flying-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: fixed;
   width: 150px;
   height: 50px;
   background-color: transparent;
   border: 1px solid #1e88e5;
   border-radius: 20px;
-  margin-bottom: 70px;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 999;
+
 }
 
 .flying-button a {
@@ -344,47 +382,3 @@
   text-decoration: none;
   color: #1e88e5;
 }
-
-/* appointment */
-#appointment {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 400px;
-}
-
-.appointment-text {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-  font-size: 2rem;
-  width: 50%;
-  height: 100%;
-  gap: 25px;
-  z-index: 2;
-}
-
-.appointment-bg {
-  position: absolute;
-  width: 100%;
-  height: 400px;
-  background-image: url("../img/video-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  filter: brightness(0.5);
-  z-index: 1;
-}
-
-.appointment-btn {
-    width: 210px;
-    font-size: 1.3rem;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    border: 0.5px solid #fff;
-    border-radius: 5px;
-    padding: 1rem 1.5rem;
-  }

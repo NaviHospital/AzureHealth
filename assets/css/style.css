@@ -146,9 +146,13 @@ footer {
   transition: transform 0.5s ease;
 }
 
-.footer-info a:hover {
-  transform: translateX(5px);
+.footer-info li i {
+  color: #1e88e5;
 }
+
+/* .footer-info a:hover {
+  transform: translateX(5px);
+} */
 
 #footer-bottom {
   display: flex;

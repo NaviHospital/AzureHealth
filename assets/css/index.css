@@ -68,24 +68,34 @@
   margin-top: 50px;
 }
 
+/* appointment-btn */
 .appointment-btn {
-  width: 210px;
+  max-width: 250px;
+  border: 0.5px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+}
+
+.appointment-btn a{
+  color: #fff;
   font-size: 1.3rem;
   text-align: center;
   text-decoration: none;
-  color: #fff;
+}
+
+/* doctor-btn */
+.doctor-btn {
+  background-color: #fff;
   border: 0.5px solid #fff;
   border-radius: 5px;
   padding: 1rem 1.5rem;
 }
 
-.doctor-btn {
+.doctor-btn a {
   font-size: 1.3rem;
   text-decoration: none;
-  color: #000000;
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 1rem 1.5rem;
+  color: #000;
 }
 
 .hero-img {
@@ -297,6 +307,11 @@
 
 .testimonial-info h3 {
   font-size: 2rem;
+}
+
+.testimonial-info p {
+  font-size: 1.2rem;
+  color: #1e88e5;
 }
 
 .testimonial-text {
